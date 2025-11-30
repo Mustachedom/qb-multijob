@@ -1,33 +1,17 @@
 local Translations = {
-    menu = {
-        mainHeader = 'Job Menu',
-        jobDesc = ' Rank: {rankName} | Pay: ${pay}',
-        currency = '$',
-        optionHeader = 'Options for ',
-        setJobHeader = 'Set as Job',
-        setJobDesc = 'Set Current Job As',
-        toggleDuty = 'Toggle Duty',
-        toggleDutyDesc = 'Toggle Duty for',
-        quit = 'Quit Job',
-        quitDesc = 'Quit your job as',
-        goback = 'Go Back',
-        gobackDesc = 'Return To The Previous Page',
-        unemployedDescription = 'Be Unemployed | $',
-        closeMenu = 'Close Menu',
+    Warning = {
+        not_found_in_jobs = "^1 [WARNING]: Job: %{job} Rank: %{rank} does not exist in qb-core/shared/jobs.lua",
+        failed_update_no_Job = 'PLAYER: %{identifier} - Failed to update job %{job} to rank %{rank} Because Player Does Not Have The Job',
+        failed_to_remove_no_Job = 'PLAYER: %{identifier} - Failed to remove job %{job} Because Player Does Not Have The Job',
     },
-    notify = {
-        job_not_found = 'Job not found.',
-        grade_not_found = 'Grade not found.',
-        unemployed = 'You Are Now Unemployed',
-        jobChange = 'You are now employed as at ',
-        dont_have_job = 'You do not have this job.',
-        cantQuitUnemployed = 'You cannot quit being unemployed.',
-        error_quitting_job = 'An error occurred while trying to quit your job.',
-        quit_job = 'You have quit your job as a ',
-        cantToggle = 'You cannot toggle duty for this job.',
-        toggleDuty = 'You are now ',
-        overMax = 'You Already Have The Maximum Amount Of Jobs',
-        lost_job = 'You have lost your job as a ',
+    Notify = {
+        failedAdd_maxJobs = "Player: %{identifier} - Failed to add job %{job} rank %{rank} because they have reached the maximum number of jobs.",
+        failed_update_alreadyHas = "Failed To Give Player: %{identifier} Job: %{job} Rank: %{rank} Because They Already Have The Job",
+        signedIn = "You have signed in as %{job}",
+        failedSignIn_noJob = "You do not have the job %{job} to sign in as it.",
+        cantToggle = "You need to clock in at your workplace for %{job}",
+        toggleDuty = "You Are Now %{status} Duty!",
+        quitJob = "You have quit your job as %{job}",
     }
 }
 
